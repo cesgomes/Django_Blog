@@ -13,3 +13,9 @@ Executar o servidor:
 ```python
 python.exe .\manage.py runserver
 ```
+
+### Applications and routes
+Criar o app:
+```python
+python.exe .\manage.py startapp <AppName>
+```
