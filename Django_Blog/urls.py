@@ -20,5 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
 #Terceiro: Criar o caminho inicial
-    path('blog/', include('blog.urls'))
+    path('', include('blog.urls'))
 ]
