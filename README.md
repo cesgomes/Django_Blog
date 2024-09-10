@@ -19,3 +19,6 @@ Criar o app:
 ```python
 python.exe .\manage.py startapp <AppName>
 ```
+
+### Templates
+Há algum problema ao carregar o static para o CSS (pode ser para todos os static). Recomenda-se reiniciar o servidor para corrigir
