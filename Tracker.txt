@@ -1,1 +1,2 @@
-Iniciar Capitulo 01
+Capitulo 01 - Getting Started
+Capitulo 02 - Applications and Routes
