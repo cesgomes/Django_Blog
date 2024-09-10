@@ -1,9 +1,23 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-#Primeiro: Criar a função que irá ter a página home
+posts = [
+    {"author": "CESGomes",
+     "Title": "Blog Post 1",
+     "Content": "First Post Content",
+     "DatePost": "09-Set-2024"},
+    {"author": "John Doe",
+     "Title": "Blog Post 2",
+     "Content": "Second Post Content",
+     "DatePost": "10-Set-2024"}
+]
+
+# Primeiro: Criar a função que irá ter a página home
 def home(request):
-    return HttpResponse('<h1>Blog Home</h1>')
+    context = {
+        'posts': posts
+    }
+    return render(request, 'blog/home.html', context)
+
 
 def about(request):
-    return HttpResponse('<H2>About Page</h2')
+    return render(request, 'blog/about.html', {'title': 'About'})
