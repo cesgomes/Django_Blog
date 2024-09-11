@@ -4,3 +4,4 @@ Capitulo 03 - Templates
 Capitulo 04 - Admin Page
 Capitulo 05 - Database and Migrations
 Capitulo 06 - User Registration
+Capitulo 07 - Login and Logout System
