@@ -38,12 +38,19 @@ python.exe .\manage.py createsuperuser #Cria o admin do app
 - *Superuser*: Status de Power user do site 
 
 ## Database and Migrations
-Após a criação do model, necessário makemigrations para preparar a criação da tabela
-Para visualizar o comando SQL que será executado, precisa do nome do app e do ID do programa a ser gerado (na pasta migrations):
+
+### Após a criação do model, necessário makemigrations para preparar a criação da tabela
+
+### Para visualizar o comando SQL que será executado, precisa do nome do app e do ID do programa a ser gerado (na pasta migrations):
 ```python
 python.exe .\manage.py sqlmigrate <app> <id> 
 ``` 
 por exemplo:
 ```python
 python.exe .\manage.py sqlmigrate blog 0001
+``` 
+
+### Criação do modelo (tabela) na base de dados:
+```python
+python.exe .\manage.py sqlmigrate migrate
 ``` 
