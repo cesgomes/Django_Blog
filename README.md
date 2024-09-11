@@ -54,3 +54,6 @@ python.exe .\manage.py sqlmigrate blog 0001
 ```python
 python.exe .\manage.py sqlmigrate migrate
 ``` 
+
+## User Registration
+Criar um novo app, separado do blog, para controlar esta funcionalidade
