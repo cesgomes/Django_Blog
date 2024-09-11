@@ -3,3 +3,4 @@ Capitulo 02 - Applications and Routes
 Capitulo 03 - Templates
 Capitulo 04 - Admin Page
 Capitulo 05 - Database and Migrations
+Capitulo 06 - User Registration
