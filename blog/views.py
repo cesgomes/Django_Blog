@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import Post
 
 # Primeiro: Criar a função que irá ter a página home
@@ -15,6 +15,8 @@ class PostListView(ListView):
     context_object_name = 'posts'
     ordering = ['-datePost']
     
+class PostDetailView(DetailView):
+    model = Post
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
