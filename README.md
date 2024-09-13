@@ -64,3 +64,6 @@ Após a ampliação do Profile, necessario manage.py makemigrations e migrate:
 python.exe .\manage.py makemigrations 
 python.exe .\manage.py migrate  
 ``` 
+
+## Update User Profile
+Sempre validar na Admin page para ver se realmente está atualizando, ao inves de criar trocentos novos registros 
