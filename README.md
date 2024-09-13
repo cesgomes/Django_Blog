@@ -57,3 +57,10 @@ python.exe .\manage.py sqlmigrate migrate
 
 ## User Registration
 Criar um novo app, separado do blog, para controlar esta funcionalidade
+
+## User Profile and Picture
+Após a ampliação do Profile, necessario manage.py makemigrations e migrate:
+```python
+python.exe .\manage.py makemigrations 
+python.exe .\manage.py migrate  
+``` 
