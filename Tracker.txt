@@ -8,3 +8,4 @@ Capitulo 07 - Login and Logout System
 Capitulo 08 - User Profile and Picture
 Capitulo 09 - Update User Profile
 Capitulo 10 - CRUD Posts
+Capitulo 11 - Paginação
