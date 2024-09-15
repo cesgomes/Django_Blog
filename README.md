@@ -67,3 +67,41 @@ python.exe .\manage.py migrate
 
 ## Update User Profile
 Sempre validar na Admin page para ver se realmente está atualizando, ao inves de criar trocentos novos registros 
+
+## Adicionar dados via JSON:
+```python
+python.exe .\manage.py shell
+``` 
+
+Importar JSON e o modelo:
+```python
+import json
+from blog.models import Post
+``` 
+
+Abrir o arquivo local:
+```python
+with open('posts.json') as f:
+    posts_json = json.load(f)
+``` 
+
+Loop no arquivo carregado e gravar
+```python
+for post in posts_json:
+    post = Post(title=post['title'], content=post['content'], author_id=post['user_id'])
+    post.save()
+``` 
+
+TUdo junto:
+```python
+import json
+from blog.models import Post
+with open('posts.json') as f:
+    posts_json = json.load(f)
+    
+for post in posts_json:
+    post = Post(title=post['title'], content=post['content'], author_id=post['user_id'])
+    post.save()
+``` 
+
+Lembrar de sair do loop (enter) quando estiver com identação
