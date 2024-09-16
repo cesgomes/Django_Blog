@@ -105,3 +105,9 @@ for post in posts_json:
 ``` 
 
 Lembrar de sair do loop (enter) quando estiver com identação
+
+## Reset de senha: 
+Várias pegadinhas no caminho: 
+- criar variaveis de ambiente com usuario e senha
+- senha da variavel de ambiente deve ser gerada em https://myaccount.google.com/apppasswords
+- reiniciar o shell após a criação das variaveis de ambiente  

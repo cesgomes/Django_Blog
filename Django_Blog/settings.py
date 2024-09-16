@@ -135,3 +135,11 @@ LOGIN_URL = 'login'
 # Diretorio onde serão gravados os arquivos
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'  # Local onde as medias serão acessadas pelo browser
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')  # Defina no ambiente
+EMAIL_HOST_PASSWORD = 'piwp emle lhtc vmua'  # Defina no ambiente
+DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_USER')  # Use o mesmo email do remetente
